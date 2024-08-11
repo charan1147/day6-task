@@ -23,7 +23,6 @@ fetch('https://restcountries.com/v3.1/all')
   const countries = data.filter(country => country.population < 200000);
   countries.forEach(country => {
     console.log(`CountryName: ${country.name.common} - population:${country.population}`);
-    console.log();
     
     console.log(`------------------------------`);
     
